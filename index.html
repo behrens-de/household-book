@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einnahmen / Ausgaben</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <h1>{{household book}}</h1>
+        <form id="form">
+            <label for="zweck">{{Purpose}}</label>
+            <select name="purpose"></select>
+            <label for="zweck">{{Note}}</label>
+            <input type="text" name="notiz" autocomplete="off">
+            <label for="">{{Date}}</label>
+            <input type="date" name="date-of-use" value="2020-10-09">
+            <label for="">{{Sum}}</label>
+            <input type="input" name="amount" placeholder="0,00" pattern="[0-9]+([\.,][0-9][0-9])?" min="0" step="1">
+            <div id="button-set">
+                <button name="incomings">{{incomings}}</button>
+                <button name="outgoings">{{outgoings}}</button>
+            </div>
+        </form>
+
+        <h2>{{Overview}}</h2>
+        <table class="overview" cellspacing="0">
+            <tr>
+                <th>{{Date}}</th>
+                <th>{{Purpose}}</th>
+                <th>{{Note}}</th>
+                <th>{{Sum}}</th>
+            <!-- </tr>
+            <tr class="spend">
+                <td>11-12-2022</td>
+                <td>Supermarket</td>
+                <td>Example Note.... </td>
+                <td>11,11 €</td>
+            </tr>
+            <tr class="incom">
+                <td>11-12-2022</td>
+                <td>Supermarket</td>
+                <td>Example Note.... </td>
+                <td>11,11 €</td>
+            </tr> -->
+        </table>
+
+    </div>
+    <script src="./dist/validator.js" defer async></script>
+    <script src="./dist/main.js" defer async></script>
+</body>
+
+</html>
